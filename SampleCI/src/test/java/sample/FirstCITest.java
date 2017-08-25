@@ -1,4 +1,4 @@
-package SampleGITCI.SampleGITCI;
+package sample;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class NewTest2 {
+public class FirstCITest {
 	public WebDriver driver;
 	@BeforeTest
 	public void launchBrowser(){
@@ -20,4 +20,5 @@ public class NewTest2 {
 			String title = driver.getTitle();				 
 			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		  
   }
+  
 }
